@@ -15,23 +15,6 @@
             --shadow-lg:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .theme-violet {
---primary: #1e0144;           
-    --primary-light: #f5f3ff;     
-    --secondary: #00f2ff;         
-    --accent: #ff00c8;   
-    --gold: #dcbc06;               
-    --dark: #0f051d;             
-    --light: #fafafa;
-    --gray: #94a3b8;
-    --white: #ffffff;
-    --gradient-primary: linear-gradient(135deg, #2d0b5a 0%, #350d77 100%);
-    --gradient-accent: linear-gradient(135deg, #11bcc5 0%, #5b11ba 100%);
-    --shadow: 0 10px 40px rgba(112, 0, 255, 0.2); 
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
-    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
             /* ===== Reset & Base Styles ===== */
             * {
                 margin: 0;
@@ -247,8 +230,6 @@
     box-shadow: 0 12px 25px rgba(0,0,0,0.8); /* more pronounced shadow */
 }
 
-
-
             .logo-text h1 {
                 font-size: 1.4rem;
                 font-weight: 700;
@@ -262,57 +243,7 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
             }
-
-        .theme-toggle {
-            width: 40px;
-            height: 40px;
-            margin-left: 16px;
-            display: grid;
-            place-items: center;
-            position: relative;
-            background: var(--primary);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--white);
-            font-size: 1.05rem;
-            cursor: pointer;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            overflow: hidden;
-        }
-
-        .theme-toggle:hover {
-            transform: rotate(12deg) scale(1.08);
-            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
-        }
-
-        .theme-toggle:active {
-            transform: scale(0.95);
-        }
-
-        .theme-toggle .sun,
-        .theme-toggle .moon {
-            position: absolute;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        /* Default state: show sun */
-        .theme-toggle .moon {
-            opacity: 0;
-            transform: scale(0.5) rotate(-90deg);
-        }
-
-        /* When violet theme is active */
-        .theme-violet .theme-toggle .sun {
-            opacity: 0;
-            transform: scale(0.5) rotate(90deg);
-        }
-
-        .theme-violet .theme-toggle .moon {
-            opacity: 1;
-            transform: scale(1) rotate(0);
-        }
-            .nav-menu {
+       .nav-menu {
                 display: flex;
                 gap: 5px;
             }
@@ -1373,4 +1304,5 @@
                 .events-grid {
                     grid-template-columns: 1fr;
                 }
+
             }
