@@ -40,34 +40,6 @@
                 }
             });
 
-
-            // FIXED: Theme Toggle Functionality
-            const themeToggle = document.getElementById("themeToggle");
-            const htmlElement = document.documentElement;
-
-            // Initialize theme from localStorage or default
-            const savedTheme = localStorage.getItem("theme") || "default";
-            if (savedTheme === "violet") {
-                htmlElement.classList.add("theme-violet");
-            } else {
-                htmlElement.classList.remove("theme-violet");
-            }
-
-            // Theme toggle event listener
-            if (themeToggle) {
-                themeToggle.addEventListener("click", () => {
-                    const isVioletTheme = htmlElement.classList.contains("theme-violet");
-                    
-                    if (isVioletTheme) {
-                        htmlElement.classList.remove("theme-violet");
-                        localStorage.setItem("theme", "default");
-                    } else {
-                        htmlElement.classList.add("theme-violet");
-                        localStorage.setItem("theme", "violet");
-                    }
-                });
-            }
-
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -84,4 +56,5 @@
                     }
                 });
             });
+
         });
