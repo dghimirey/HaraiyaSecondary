@@ -1,20 +1,19 @@
-  /* ===== CSS Variables ===== */
-        :root {
-            --primary: #0f172a;
-            --primary-light: #f1f5f9;
-            --secondary: #e53e3e;
-            --accent: #10b981; 
-            --gold: #d69e2e;
-            --dark: #1a202c;
-            --light: #f7fafc;
-            --gray: #718096;
-            --white: #ffffff;
-            --gradient-primary: linear-gradient(135deg, #0f172a 0%, #334155 100%);
-            --gradient-accent: linear-gradient(135deg, #e53e3e 0%, #f6ad55 100%);
-            --shadow: 0 10px 40px rgba(0,0,0,0.1);
-            --shadow-lg:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+:root {
+    --primary: #2c2418;       ·# Rich charcoal brown */
+    --primary-light: #faf8f5; /* Warm ivory background */
+    --secondary: #9b2c2c;     /* Deep burgundy - classic prestige */
+    --accent: #b68b40;        /* Aged gold/metallic */
+    --gold: #c9a03d;
+    --dark: #1c1917;
+    --light: #fefcf7;
+    --gray: #78716c;
+    --white: #ffffff;
+    --gradient-primary: linear-gradient(145deg, #2c2418 0%, #4a3b2c 100%);
+    --gradient-accent: linear-gradient(145deg, #9b2c2c 0%, #b68b40 100%);
+    --shadow: 0 12px 24px -8px rgba(0,0,0,0.12);
+    --shadow-lg: 0 30px 40px -15px rgba(0,0,0,0.2);
+    --transition: all 0.35s ease-out;
+}
             /* ===== Reset & Base Styles ===== */
             * {
                 margin: 0;
